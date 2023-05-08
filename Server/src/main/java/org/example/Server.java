@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 import static org.example.MultiThreadServer.waitMessAndSend;
 
 public class Server {
-    static ExecutorService executeIt = Executors.newFixedThreadPool(4);
+    static ExecutorService executeIt = Executors.newFixedThreadPool(2);
     private static final Map<Integer, User> users = new HashMap<>();
 
     public static void main(String[] args) {
